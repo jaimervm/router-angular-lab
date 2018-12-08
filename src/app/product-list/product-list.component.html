@@ -1,9 +1,9 @@
 <div class="card mt-2" style="width: 18rem;">
-<div class="card-header">product list</div>
-<ul class="list-group list-group-flush">
-  <li class="list-group-item" *ngFor="let product of products">
-    <a [routerLink]="['/product/', product.id]">{{product.name}}-{{product.id}}</a>
-  </li>
-</ul>
-<a class="btn btn-secundary btn-blok mt-2" routerLink="/">go to home</a>
+  <div class="card-header">Prodruct List</div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let product of products">
+      <a [routerLink]="['/product',product.id]">{{ product.name }} - {{ product.id }}</a>
+    </li>
+  </ul>
+  <a class="btn btn-secondary btn-block mt-2" routerLink="/">Go To Home</a>
 </div>

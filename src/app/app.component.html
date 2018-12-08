@@ -1,12 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <div style="text-align:center">
-    <h1>welcome to {{title}}!</h1>
-    <a class = "btn btn-secundary btn-block" [routerLink]="[{outlets:{primary:['products'], sidebar: [products]}}
-    ]"
+    <h1>Welcome to {{ title }}</h1>
+    <a class="btn btn-secondary btn-block"
+      [routerLink]="[ { outlets: { primary: ['products'], sidebar: ['products'] } } ]"
     >
-    Products
-  </a>
+      Products
+    </a>
   </div>
   <div>
     <div style="float:right"><router-outlet></router-outlet></div>
